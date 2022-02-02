@@ -38,7 +38,7 @@ export const ContactsPage = (props) => {
     (props.contacts.find(t => t.name.toLowerCase().trim() === name.toLowerCase().trim()) !== undefined)
       ? setDuplicated(true)
       : setDuplicated(false)
-  }, [name])
+  }, [name, props.contacts])
 
   return (
     <div>

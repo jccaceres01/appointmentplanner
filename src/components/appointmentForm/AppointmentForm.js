@@ -50,10 +50,10 @@ export const AppointmentForm = ({
         <TextField size="small" sx={{margin: 2}} type="text" name="title" value={title} onChange={handleChange} placeholder="Title" />
       </div>
       
-      <ContactPicker options={contacts} handleChange={handleChange} />
+      <ContactPicker options={contacts} handleChange={handleChange} value={contact} />
       
       <div>
-        <TextField size="small" sx={{margin: 2}} type="date" name="date" value={date} onChange={handleChange} placeholder="Date" />
+        <TextField size="small" sx={{margin: 2}} type="date" min={getTodayString.toString()} name="date" value={date} onChange={handleChange} placeholder="Date" />
       </div>
       
       <div>
