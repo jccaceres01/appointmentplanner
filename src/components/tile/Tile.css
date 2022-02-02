@@ -1,0 +1,15 @@
+.tile-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.tile {
+  font-size: 12px;
+  font-style: italic;
+  color: lightgray;
+}
+
+p {
+  margin: 0px;
+}
